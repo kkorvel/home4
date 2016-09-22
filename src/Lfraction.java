@@ -1,6 +1,6 @@
 import java.util.*;
 
-/** This class presents fractions of form n/d where n and d are long integer 
+/** This class represents fractions of form n/d where n and d are long integer 
  * numbers. Basic operations and arithmetics for fractions are provided.
  */
 public class Lfraction implements Comparable<Lfraction> {
@@ -39,7 +39,7 @@ public class Lfraction implements Comparable<Lfraction> {
     */
    @Override
    public String toString() {
-      return ""; // TODO!!!
+      return null; // TODO!!!
    }
 
    /** Equality test.
@@ -109,6 +109,7 @@ public class Lfraction implements Comparable<Lfraction> {
     * @param m second fraction
     * @return -1 if this < m; 0 if this==m; 1 if this > m
     */
+   @Override
    public int compareTo (Lfraction m) {
       return 0; // TODO!!!
    }
