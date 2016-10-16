@@ -210,12 +210,12 @@ public class Lfraction implements Comparable<Lfraction> {
     */
    @Override
    public int compareTo(Lfraction m) {
-      long origFrac = numerator * m.denominator;
-      long mFrac = denominator * m.numerator;
+      long originalFraction = numerator * m.denominator;
+      long mFraction = denominator * m.numerator;
 
-      if (origFrac == mFrac) {
+      if (originalFraction == mFraction) {
          return 0;
-      } else if (origFrac < mFrac) {
+      } else if (originalFraction < mFraction) {
          return -1;
       } else {
          return 1;
@@ -235,7 +235,7 @@ public class Lfraction implements Comparable<Lfraction> {
    }
 
    /**
-    * Integer part of the (improper) fraction.
+    * Integer part of the fraction.
     *
     * @return integer part of this fraction
     */
@@ -244,7 +244,7 @@ public class Lfraction implements Comparable<Lfraction> {
    }
 
    /**
-    * Extract fraction part of the (improper) fraction
+    * Extract fraction part of the fraction
     * (a proper fraction without the integer part).
     *
     * @return fraction part of this fraction
