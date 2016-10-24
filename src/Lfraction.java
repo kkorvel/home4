@@ -4,8 +4,8 @@ import java.util.regex.PatternSyntaxException;
  * numbers. Basic operations and arithmetics for fractions are provided.
  */
 public class Lfraction implements Comparable<Lfraction> {
-   private long numerator;
-   private long denominator;
+   private long numerator; //lugeja
+   private long denominator; //nimetaja
 
    /**
     * Constructor.
@@ -20,7 +20,7 @@ public class Lfraction implements Comparable<Lfraction> {
          n *= -1;
          d *= -1;
       }
-      long gcd = greatestCommonDivisor(n, d);
+      long gcd = greatestCommonDivisor(n, d);//suurim ühistegur
       this.numerator = n / gcd;
       this.denominator = d / gcd;
    }
